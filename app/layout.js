@@ -1,17 +1,30 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Inter } from 'next/font/google';
+import { cookies } from 'next/headers';
+import './globals.css';
+import ThemeProvider from '@/components/ThemeProvider';
+import Contact from '@/components/Contact';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Portfolio',
   description: 'Jake Crawford - Portfolio',
-}
+};
 
 export default function RootLayout({ children }) {
+  const themeCookie = cookies().get('theme');
+  const currentTheme = themeCookie ? themeCookie.value : 'night';
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" data-theme={currentTheme}>
+      <body className={inter.className}>
+        <div className="h-screen w-screen">
+          <div className="flex justify-between items-center bg-accent pr-5">
+            <Contact />
+            <ThemeProvider />
+          </div>
+          <div>{children}</div>
+        </div>
+      </body>
     </html>
-  )
+  );
 }
