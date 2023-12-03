@@ -7,7 +7,7 @@ import Contact from '@/components/Contact';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Portfolio',
+  title: 'Jake Crawford',
   description: 'Jake Crawford - Portfolio',
 };
 

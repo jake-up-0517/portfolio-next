@@ -6,6 +6,13 @@ import Image from 'next/image';
 import profilePic from '../public/IMG_1184.jpeg';
 
 export default function Home() {
+  const [screenSize, setScreenSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  console.log(screenSize);
+
   useEffect(() => {
     const name = document.getElementById('name');
     name.innerHTML = name.textContent.replace(
@@ -67,11 +74,11 @@ export default function Home() {
           <Image
             id="pic"
             src={profilePic}
-            className="max-w-xs lg:max-w-sm rounded-lg shadow-2xl"
+            className="max-w-xs md:max-w-sm rounded-lg shadow-2xl order-2 md:order-1"
             alt="profile picture"
             priority
           />
-          <div className="flex flex-col text-center md:text-left">
+          <div className="flex flex-col text-center md:text-left order-1 md:order-2">
             <h1
               id="name"
               className="text-7xl font-bold text-primary mb-5 md:mb-1"
@@ -94,7 +101,6 @@ export default function Home() {
               </a>
               !
             </p>
-            {/* <button className="btn btn-primary">Get Started</button> */}
           </div>
         </div>
       </div>
