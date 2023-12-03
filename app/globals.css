@@ -5,3 +5,14 @@
 .menu {
   padding: 0;
 }
+
+@media (min-width: 768px) {
+  .letter {
+    display: inline-block;
+    line-height: 4.5rem;
+  }
+  .letter2 {
+    display: inline-block;
+    line-height: 4.5rem;
+  }
+}
