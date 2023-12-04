@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const themeCookie = cookies().get('theme');
-  const currentTheme = themeCookie ? themeCookie.value : 'night';
+  const currentTheme = themeCookie ? themeCookie.value : 'dark';
   return (
     <html lang="en" data-theme={currentTheme}>
       <body className={inter.className}>

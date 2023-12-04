@@ -15,15 +15,15 @@ export default function ThemeSwitcher({ theme }) {
   }, [currentTheme]);
 
   function toggleTheme() {
-    if (currentTheme === 'night') {
-      setTheme('winter');
+    if (currentTheme === 'dark') {
+      setTheme('light');
     } else {
-      setTheme('night');
+      setTheme('dark');
     }
   }
 
   function isDark() {
-    if (currentTheme === 'night') {
+    if (currentTheme === 'dark') {
       return true;
     } else {
       return false;

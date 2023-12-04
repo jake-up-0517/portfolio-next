@@ -10,8 +10,17 @@ export default function Home() {
     width: window.innerWidth,
     height: window.innerHeight,
   });
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
-  console.log(screenSize);
+  const bgGradient = (e) => {
+    const bg = document.getElementById('hero');
+    const rect = bg.getBoundingClientRect(),
+      x = e.clientX - rect.left,
+      y = e.clientY - rect.top;
+    bg.style.setProperty('--mouse-x', `${x}px`);
+    bg.style.setProperty('--mouse-y', `${y}px`);
+    setMousePos({ x: x, y: y });
+  };
 
   useEffect(() => {
     const name = document.getElementById('name');
@@ -68,7 +77,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div
+      id="hero"
+      className="hero min-h-screen bg-base-200 relative"
+      onMouseMove={bgGradient}
+    >
       <div>
         <div className="hero-content flex-col justify-center items-center md:flex-row">
           <Image
