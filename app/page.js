@@ -6,10 +6,6 @@ import Image from 'next/image';
 import profilePic from '../public/IMG_1184.jpeg';
 
 export default function Home() {
-  // const [screenSize, setScreenSize] = useState({
-  //   width: window.innerWidth,
-  //   height: window.innerHeight,
-  // });
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   const bgGradient = (e) => {
@@ -40,10 +36,6 @@ export default function Home() {
       .add({
         // name
         targets: '.letter',
-        // scale: [4, 1],
-        // opacity: [0, 1],
-        // translateZ: 0,
-        // easing: 'easeOutExpo',
         translateY: [-40, 0],
         duration: 950,
         delay: anime.stagger(100),
@@ -64,23 +56,20 @@ export default function Home() {
       .add(
         {
           targets: '#desc',
-          // translateY: [1500, 0],
           opacity: [0, 1],
-          // easing: 'spring(1, 80, 10, 0)',
-          // easing: 'linear',
-        },
-        '-=700'
-      )
-      .add(
-        {
-          targets: '#pic',
-          // translateX: [-1500, 0],
-          // opacity: [0, 1],
-          // easing: 'spring(1, 80, 10, 0)',
-          // easing: 'linear',
         },
         '-=700'
       );
+    // .add(
+    //   {
+    //     targets: '#pic',
+    //     translateX: [-1500, 0],
+    //     opacity: [0, 1],
+    //     easing: 'spring(1, 80, 10, 0)',
+    //     easing: 'linear',
+    //   },
+    //   '-=700'
+    // );
   }, []);
 
   return (
