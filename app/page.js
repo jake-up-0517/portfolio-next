@@ -6,10 +6,10 @@ import Image from 'next/image';
 import profilePic from '../public/IMG_1184.jpeg';
 
 export default function Home() {
-  const [screenSize, setScreenSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
-  });
+  // const [screenSize, setScreenSize] = useState({
+  //   width: window.innerWidth,
+  //   height: window.innerHeight,
+  // });
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   const bgGradient = (e) => {
