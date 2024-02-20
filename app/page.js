@@ -38,16 +38,19 @@ export default function Home() {
     anime
       .timeline({ loop: false })
       .add({
+        // name
         targets: '.letter',
-        scale: [4, 1],
-        opacity: [0, 1],
-        translateZ: 0,
-        easing: 'easeOutExpo',
+        // scale: [4, 1],
+        // opacity: [0, 1],
+        // translateZ: 0,
+        // easing: 'easeOutExpo',
+        translateY: [-40, 0],
         duration: 950,
         delay: anime.stagger(100),
       })
       .add(
         {
+          // title
           targets: '.letter2',
           scale: [4, 1],
           opacity: [0, 1],
@@ -61,16 +64,20 @@ export default function Home() {
       .add(
         {
           targets: '#desc',
-          translateY: [1500, 0],
-          easing: 'spring(1, 80, 10, 0)',
+          // translateY: [1500, 0],
+          opacity: [0, 1],
+          // easing: 'spring(1, 80, 10, 0)',
+          // easing: 'linear',
         },
         '-=700'
       )
       .add(
         {
           targets: '#pic',
-          translateX: [-1500, 0],
-          easing: 'spring(1, 80, 10, 0)',
+          // translateX: [-1500, 0],
+          // opacity: [0, 1],
+          // easing: 'spring(1, 80, 10, 0)',
+          // easing: 'linear',
         },
         '-=700'
       );
@@ -102,8 +109,10 @@ export default function Home() {
               Software Developer
             </h2>
             <p id="desc" className="py-6 text-xl">
-              I am a developer with a passion for creating fun, accesible,
-              intuitive, and beautiful user experiences. Check out my work on{' '}
+              I am a skilled software developer, an empathetic team member, and
+              a life-long learner. I am always working to expand and strengthen
+              my skill sets, whether it be in programming, in music, or in the
+              kitchen. Check out my work on{' '}
               <a
                 className="link link-accent"
                 href="https://github.com/jake-up-0517"
