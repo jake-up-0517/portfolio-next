@@ -17,13 +17,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme={currentTheme}>
       <body className={inter.className}>
-        <div className="h-screen w-screen">
-          <div className="flex justify-between items-center bg-accent pr-5">
-            <Contact />
-            <ThemeProvider />
-          </div>
-          <div>{children}</div>
-        </div>
+        <header className="sticky top-0 z-50 flex justify-between items-center bg-accent pr-5">
+          <Contact />
+          <ThemeProvider />
+        </header>
+        <main>{children}</main>
       </body>
     </html>
   );
