@@ -8,14 +8,14 @@ export default function Hero() {
         <div className="flex flex-col text-center md:text-left order-1 md:order-2">
           <h1
             id="name"
-            className="text-7xl font-bold text-primary mb-5 md:mb-1"
+            className="text-8xl font-bold text-primary mb-5 md:mb-1"
           >
             Jake Crawford
           </h1>
-          <h2 id="title" className="text-5xl font-bold text-secondary">
+          <h2 id="title" className="text-6xl font-bold text-secondary">
             Software Developer
           </h2>
-          <p id="desc" className="py-6 text-xl">
+          <p id="desc" className="py-6 text-3xl">
             I&apos;m a developer. Also a musician. Also a chef. Oh yea I almost
             forget I was also an accountant at one point. I love my dog and
             watching Premier League soccer (or football for the folks outside
@@ -25,7 +25,7 @@ export default function Hero() {
         <Image
           id="pic"
           src={profilePic}
-          className="max-w-xs md:max-w-sm rounded-full shadow-2xl order-2"
+          className="max-w-xs md:max-w-lg rounded-full shadow-2xl order-2"
           alt="profile picture"
           priority
         />

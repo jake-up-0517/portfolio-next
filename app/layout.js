@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme={currentTheme}>
       <body className={roboto.className}>
-        <header className="sticky top-0 z-50 h-12 flex justify-between items-center bg-accent pr-5">
+        <header className="sticky top-0 z-50 h-24 flex justify-between items-center bg-accent pr-5">
           <Contact />
           <Navigation />
           <ThemeProvider />

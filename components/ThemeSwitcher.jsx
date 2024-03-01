@@ -32,12 +32,12 @@ export default function ThemeSwitcher({ theme }) {
 
   return (
     // <div className="flex justify-end bg-accent">
-    <div className="flex cursor-pointer gap-2 max-w-fit">
+    <div className="flex items-center cursor-pointer gap-2 max-w-fit">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="stroke-accent-content"
-        width="20"
-        height="20"
+        width="35"
+        height="35"
         viewBox="0 0 24 24"
         fill="none"
         strokeWidth="2"
@@ -49,15 +49,15 @@ export default function ThemeSwitcher({ theme }) {
       </svg>
       <input
         type="checkbox"
-        className="toggle toggle-secondary theme-controller"
+        className="toggle toggle-lg toggle-secondary theme-controller"
         checked={isDark()}
         onChange={toggleTheme}
       />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="stroke-accent-content"
-        width="20"
-        height="20"
+        width="35"
+        height="35"
         viewBox="0 0 24 24"
         fill="none"
         strokeWidth="2"

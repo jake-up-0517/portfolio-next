@@ -13,7 +13,7 @@ export default function Navigation() {
         <li>
           <a
             onClick={scrollToTop}
-            className="text-accent-content text-lg font-semibold"
+            className="text-accent-content text-3xl font-semibold"
           >
             Home
           </a>
@@ -23,7 +23,7 @@ export default function Navigation() {
             to="about"
             smooth={true}
             duration={1000}
-            className="text-accent-content text-lg font-semibold"
+            className="text-accent-content text-3xl font-semibold"
             offset={-50}
           >
             About
@@ -34,7 +34,7 @@ export default function Navigation() {
             to="projects"
             smooth={true}
             duration={1000}
-            className="text-accent-content text-lg font-semibold"
+            className="text-accent-content text-3xl font-semibold"
             offset={-50}
           >
             Projects

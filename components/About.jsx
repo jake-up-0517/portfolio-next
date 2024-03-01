@@ -4,9 +4,9 @@ export default function About() {
   return (
     <Element
       name="about"
-      className="flex flex-col w-screen h-screen bg-secondary text-secondary-content text-lg justify-center pl-6"
+      className="flex flex-col w-screen h-screen bg-secondary text-secondary-content text-2xl justify-center px-6"
     >
-      <h1 className="text-5xl font-bold mb-6 mt-10">About Me</h1>
+      <h1 className="text-7xl font-bold mb-12">About Me</h1>
       <p className="mb-6">
         I&apos;m Jake. I&apos;m a software engineer & web developer located in
         Austin, TX. My expertise lies in the JavaScript ecosystem (React/Redux,
