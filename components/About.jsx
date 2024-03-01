@@ -1,10 +1,12 @@
+import { Element } from 'react-scroll';
+
 export default function About() {
   return (
-    <div
-      id="about"
-      className="flex flex-col w-screen h-screen bg-secondary text-secondary-content text-xl justify-center pl-6"
+    <Element
+      name="about"
+      className="flex flex-col w-screen h-screen bg-secondary text-secondary-content text-lg justify-center pl-6"
     >
-      <h1 className="text-7xl font-bold mb-6 mt-3">About Me</h1>
+      <h1 className="text-5xl font-bold mb-6 mt-10">About Me</h1>
       <p className="mb-6">
         I&apos;m Jake. I&apos;m a software engineer & web developer located in
         Austin, TX. My expertise lies in the JavaScript ecosystem (React/Redux,
@@ -22,7 +24,7 @@ export default function About() {
         I really wanted out of life and decided to make a change. I quit my job
         and attended a coding bootcamp and haven&apos;t looked back since.
       </p>
-      <p className="mb-3">
+      <p className="mb-10">
         Feel free to reach out to me through{' '}
         <a
           href="mailto:jake.crawford512@gmail.com"
@@ -34,6 +36,6 @@ export default function About() {
         </a>{' '}
         if you have any questions about my work or just want to chat.
       </p>
-    </div>
+    </Element>
   );
 }

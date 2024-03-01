@@ -16,65 +16,11 @@ export default function Home() {
     bg.style.setProperty('--mouse-y', `${y}px`);
   };
 
-  // useEffect(() => {
-  //   const name = document.getElementById('name');
-  //   name.innerHTML = name.textContent.replace(
-  //     /\S/g,
-  //     "<span class='letter'>$&</span>"
-  //   );
-
-  //   const title = document.getElementById('title');
-  //   title.innerHTML = title.textContent.replace(
-  //     /\S/g,
-  //     "<span class='letter2'>$&</span>"
-  //   );
-
-  //   anime
-  //     .timeline({ loop: false })
-  //     .add({
-  //       // name
-  //       targets: '.letter',
-  //       translateY: [-40, 0],
-  //       duration: 950,
-  //       delay: anime.stagger(100),
-  //     })
-  //     .add(
-  //       {
-  //         // title
-  //         targets: '.letter2',
-  //         scale: [4, 1],
-  //         opacity: [0, 1],
-  //         translateZ: 0,
-  //         easing: 'easeOutExpo',
-  //         duration: 950,
-  //         delay: anime.stagger(100),
-  //       },
-  //       '-=700'
-  //     )
-  //     .add(
-  //       {
-  //         targets: '#desc',
-  //         opacity: [0, 1],
-  //       },
-  //       '-=700'
-  //     );
-  // .add(
-  //   {
-  //     targets: '#pic',
-  //     translateX: [-1500, 0],
-  //     opacity: [0, 1],
-  //     easing: 'spring(1, 80, 10, 0)',
-  //     easing: 'linear',
-  //   },
-  //   '-=700'
-  // );
-  // }, []);
-
   return (
-    <div onMouseMove={bgGradient}>
+    <div className="flex flex-col" onMouseMove={bgGradient}>
       <Hero />
       <About />
-      {/* <Projects /> */}
+      <Projects />
     </div>
   );
 }

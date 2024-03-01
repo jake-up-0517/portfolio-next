@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-#hero::before {
+/* #hero::before {
   background: radial-gradient(
     600px circle at var(--mouse-x) var(--mouse-y),
     rgba(255, 255, 255, 0.06),
@@ -16,7 +16,7 @@
   border-radius: inherit;
   content: '';
   z-index: 2;
-}
+} */
 
 .menu {
   padding: 0;
